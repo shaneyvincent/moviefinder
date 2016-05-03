@@ -6,6 +6,6 @@ get '/' do
 end
 
 get '/movie' do
-  movie = Siskel.new("Lion King")
-  "This movie title is #{movie.title}"
+  @movie = Siskel.new("Lion King")
+  erb :movie
 end
